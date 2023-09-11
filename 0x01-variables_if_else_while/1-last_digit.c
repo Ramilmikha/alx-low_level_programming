@@ -2,7 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-
+/**
+ * main - Entry point of the program
+ *
+ * Description: This function generates a random number and prints a message
+ *              based on the value of the last digit of the number.
+ *
+ * Return: Always 0 (indicating success)
+ */
 /* betty style doc for function main goes there */
 int main(void)
 {
