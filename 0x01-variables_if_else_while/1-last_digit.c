@@ -1,42 +1,31 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/* more headers goes there */
 
-/**
- * main - Entry point of the program
- *
- * This function generates a random number and prints the last digit along with
- * a message depending on the value of the last digit.
- *
- * Return: Always 0 (indicating success)
- */
+/* betty style doc for function main goes there */
 int main(void)
 {
-int n;
-int lastDigit;
+	int n;
 
-	/* Initialize random seed */
-srand(time(0));
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+	int lastDigit = n % 10;
 
-	/* Generate a random number */
-n = rand() - RAND_MAX /2;
+    printf("Last digit of %d is ", n);
+    printf("%d and is ", lastDigit);
 
-printf("Last digit of %d is ", n);
-
-lastDigit = n % 10; /* Get the last digit */
-printf("%d and is ", lastDigit);
-if (lastDigit > 5)
-{
-printf("greater than 5\n");
-}
-else if (lastDigit == 0)
-{
-printf("0\n");
-}
-else
-{
-printf("less than 6 and not 0\n");
-}
-
-return (0);
+    if (lastDigit > 5)
+    {
+        printf("greater than 5\n");
+    }
+    else if (lastDigit == 0)
+    {
+        printf("0\n");
+    }
+    else
+    {
+        printf("less than 6 and not 0\n");
+    }
+	return (0);
 }
