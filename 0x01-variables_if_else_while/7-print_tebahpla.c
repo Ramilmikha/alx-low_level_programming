@@ -3,18 +3,19 @@
 /**
  * main - Entry point of the program
  *
- * Description: This program prints all single-digit numbers of base 10
- * starting from 0, followed by a new line.
+ * Description: This program prints the lowercase alphabet in reverse order,
+ * followed by a new line, using only the putchar function with a maximum of
+ * two putchar calls.
  *
  * Return: Always 0 (indicating success)
  */
 int main(void)
 {
-int digit = 0;
-while (digit <= 9)
+char letter = 'z';
+while (letter >= 'a')
 {
-putchar(digit + '0');
-digit++;
+putchar(letter);
+letter--;
 }
 putchar('\n');
 return (0);
