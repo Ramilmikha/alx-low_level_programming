@@ -19,7 +19,7 @@ int lastDigit;
 srand(time(0));
 
 	/* Generate a random number */
-n = rand();
+n = rand() - RAND_MAX /2;
 
 printf("Last digit of %d is ", n);
 
