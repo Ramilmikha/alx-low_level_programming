@@ -24,18 +24,18 @@ n = rand() - RAND_MAX /2;
 printf("Last digit of %d is ", n);
 
 lastDigit = n % 10; /* Get the last digit */
-
+printf("%d and is ", lastDigit);
 if (lastDigit > 5)
 {
-printf("%d and is greater than 5\n");
+printf("greater than 5\n");
 }
 else if (lastDigit == 0)
 {
-printf("%d and is 0\n");
+printf("0\n");
 }
 else
 {
-printf("%d and is less than 6 and not 0\n");
+printf("less than 6 and not 0\n");
 }
 
 return (0);
