@@ -4,7 +4,7 @@
 * print_times_table - prints the n times table, starting with 0
 * @n: the times table to print
 */
-void times_table(int n)
+void print_times_table(int n)
 {
 int row, column, result;
 if (n < 0 || n > 15)
