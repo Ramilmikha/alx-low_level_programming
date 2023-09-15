@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * _isdigit - checks for a digit (0 through 9).
  * @c: The character to be checked
@@ -13,11 +12,9 @@ return (1);
 else
 return (0);
 }
-
 int main(void)
 {
 char c;
-
 c = '0';
 printf("%c: %d\n", c, _isdigit(c));
 c = 'a';
