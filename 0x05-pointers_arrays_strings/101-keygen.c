@@ -4,11 +4,11 @@
 #define PASSWORD_LENGTH 12
 int main(void)
 {
+int i;  
 char password[PASSWORD_LENGTH + 1]; /* +1 for the null terminator */
 const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 const int charset_length = sizeof(charset) - 1;
 srand(time(NULL));
-int i;
 for ( i = 0; i < PASSWORD_LENGTH; i++)
 {
 int random_index = rand() % charset_length;
