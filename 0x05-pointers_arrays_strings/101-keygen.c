@@ -4,7 +4,7 @@
 #define PASSWORD_LENGTH 12
 int main(void)
 {
-char password[PASSWORD_LENGTH + 1]; // +1 for the null terminator
+char password[PASSWORD_LENGTH + 1]; /* +1 for the null terminator */
 const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 const int charset_length = sizeof(charset) - 1;
 srand(time(NULL));
