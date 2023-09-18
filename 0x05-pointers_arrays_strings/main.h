@@ -1,36 +1,42 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
+int _putchar(char c);
 
-/* Exercise 0: reset_to_98 */
+/* Task 0 */
 void reset_to_98(int *n);
 
-/* Exercise 1: swap_int */
+/* Task 1 */
 void swap_int(int *a, int *b);
 
-/* Exercise 2: _strlen */
+/* Task 2 */
 int _strlen(char *s);
 
-/* Exercise 3: _puts */
+/* Task 3 */
 void _puts(char *str);
 
-/* Exercise 4: print_rev */
+/* Task 4 */
 void print_rev(char *s);
 
-/* Exercise 5: rev_string */
+/* Task 5 */
 void rev_string(char *s);
 
-/* Exercise 6: puts2 */
+/* Task 6 */
 void puts2(char *str);
 
-/* Exercise 7: puts_half */
+/* Task 7 */
 void puts_half(char *str);
 
-/* Exercise 8: print_array */
+/* Task 8 */
 void print_array(int *a, int n);
 
-/* Exercise 9: _strcpy */
+/* Task 9 */
 char *_strcpy(char *dest, char *src);
+
+/* Task 10 */
+int _atoi(char *s);
+
+/* Task 11 */
+/* No function prototypes needed for Task 11 */
 
 #endif /* MAIN_H */
