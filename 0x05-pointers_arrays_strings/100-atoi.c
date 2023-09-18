@@ -11,7 +11,7 @@ int sign = 1;
 int result = 0;
 int i = 0;
 if (s == NULL)
-return 0;
+return (0);
 if (s[0] == '-')
 {
 sign = -1;
@@ -21,10 +21,10 @@ for (; s[i] != '\0'; i++)
 {
 if (s[i] >= '0' && s[i] <= '9')
 {
-if (result > INT_MAX / 10 || (result == INT_MAX / 10 && s[i] - '0' > INT_MAX % 10))
+if (result > INT_MAX/ 10||(result == INT_MAX/10 && s[i] -'0'> INT_MAX % 10))
 {
 if (sign == 1)
-return INT_MAX;
+return (INT_MAX);
 else
 return INT_MIN;
 }
@@ -35,5 +35,5 @@ else
 break;
 }
 }
-return (result * sign);
+return (result *sign);
 }
