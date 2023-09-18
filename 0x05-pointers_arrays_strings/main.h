@@ -2,7 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
-#include <limits.h> // for INT_MAX and INT_MIN
+#include <limits.h> /* for INT_MAX and INT_MIN */
 
 /* Function prototypes */
 int _putchar(char c);
