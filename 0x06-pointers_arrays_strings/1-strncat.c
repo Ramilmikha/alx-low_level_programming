@@ -6,6 +6,7 @@
 * Return: A pointer to the resulting string `dest`.
 */
 {int dest_len = 0;
+char *_strncat(char *dest, char *src, int n)
 int i = 0;
 while (dest[dest_len] != '\0')
 {dest_len++;}
