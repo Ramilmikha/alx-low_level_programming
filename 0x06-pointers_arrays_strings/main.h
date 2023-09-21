@@ -3,28 +3,16 @@
 
 #include <stdio.h>
 
-/* Task 0 */
+int _putchar(char c);
+
 char *_strcat(char *dest, char *src);
-
-/* Task 1 */
 char *_strncat(char *dest, char *src, int n);
-
-/* Task 2 */
 char *_strncpy(char *dest, char *src, int n);
-
-/* Task 3 */
 int _strcmp(char *s1, char *s2);
-
-/* Task 4 */
 void reverse_array(int *a, int n);
-
-/* Task 5 */
 char *string_toupper(char *str);
-
-/* Task 6 */
 char *cap_string(char *str);
-
-/* Task 7 */
 char *leet(char *str);
+void print_number(int n);
 
-#endif /* MAIN_H */
+#endif
