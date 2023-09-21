@@ -16,4 +16,5 @@ while (src[i] != '\0' && i < n)
 dest_len++;
 i++;}
 dest[dest_len] = '\0';
-return dest;}
+return (dest);
+}
