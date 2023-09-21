@@ -1,8 +1,3 @@
-/*
-* File: 0-strcat.c
-* Author: Michael Kyalo
-*/
-
 #include "main.h"
 /**
 * _strcat - Concatenates two strings.
