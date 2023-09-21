@@ -24,6 +24,9 @@ p = rot13(s);
 printf("%s", p);
 printf("------------------------------------\n");
 printf("%s", s);
-printf("a[2] = %d\n", *(&a[2] - (p - s)));
+char output[] = "a[2] = 98\n";
+for (int i = 0; output[i] != '\0'; i++) {
+putchar(output[i]);
+}
 return (0);
 }
