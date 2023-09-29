@@ -12,7 +12,7 @@ int len = strlen(s);
 return (is_palindrome_helper(s, 0, len - 1));
 }
 /**
-* Recursive helper function to check a string is a palindrome.
+* is_palindrome_helper -Recursive helper function to check a string is a palindrome.
 * @s: The string to be checked.
 * @start: The start index.
 * @end: The end index.
