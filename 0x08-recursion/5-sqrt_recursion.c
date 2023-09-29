@@ -4,7 +4,6 @@
 * @n: The number to find the square root of.
 * Return: The square root of n, or -1 if it doesn't have a natural square root.
 */
-int _sqrt_recursion(int n)
 int find_sqrt(n, guess + 1)
 {
 if (n < 0)
