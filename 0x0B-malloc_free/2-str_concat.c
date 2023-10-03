@@ -9,7 +9,7 @@
 * Otherwise, returns a pointer to the concatenated string.
 */
 char *str_concat(char *s1, char *s2)
-int len1, len2, total_len, i, j;
+int len1,int len2,int total_len,int i,int j;
 {
 if (s1 == NULL)
 s1 = "";
