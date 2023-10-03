@@ -5,10 +5,11 @@ char *argstostr(int ac, char **av)
     if (ac == 0 || av == NULL)
         return (NULL);
 
-    int total_length = 0;
+    
     int i, j;
     char *concatenated;
     int pos = 0;
+    int total_length = 0;
 
     for (i = 0; i < ac; i++)
     {
