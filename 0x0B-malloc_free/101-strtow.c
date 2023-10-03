@@ -68,12 +68,12 @@ char **strtow(char *str)
 if (str == NULL || *str == '\0')
 return NULL;
 num_words = count_words(str);
-char **words = (char **)malloc((num_words + 1) * sizeof(char *));
+**words = (char **)malloc((num_words + 1) * sizeof(char *));
 if (words == NULL)
 return NULL;
 word_index = 0;
 in_word = 0;
-for (int i = 0; str[i] != '\0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
 if (is_space(str[i]))
 {
