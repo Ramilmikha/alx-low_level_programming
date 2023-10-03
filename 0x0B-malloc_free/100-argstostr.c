@@ -18,7 +18,7 @@ char *argstostr(int ac, char **av)
             total_length++;
             j++;
         }
-        total_length++;  // Add 1 for the newline character
+        total_length++;
     }
 
     concatenated = (char *)malloc((total_length + 1) * sizeof(char));
@@ -35,10 +35,10 @@ char *argstostr(int ac, char **av)
             pos++;
             j++;
         }
-        concatenated[pos] = '\n';  // Add a newline character between arguments
+        concatenated[pos] = '\n';
         pos++;
     }
 
-    concatenated[pos] = '\0';  // Null-terminate the concatenated string
+    concatenated[pos] = '\0';
     return (concatenated);
 }
