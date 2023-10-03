@@ -5,7 +5,6 @@ int total_length, i, j,  pos;
 if (ac == 0 || av == NULL)
 return (NULL);
 total_length = 0;
-i, j;
 for (i = 0; i < ac; i++)
 {
 j = 0;
