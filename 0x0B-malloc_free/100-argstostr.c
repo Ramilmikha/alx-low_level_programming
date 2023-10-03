@@ -1,10 +1,11 @@
 #include <stdlib.h>
 char *argstostr(int ac, char **av)
 {
+int total_length, i, j,  pos;
 if (ac == 0 || av == NULL)
 return (NULL);
-int total_length = 0;
-int i, j;
+total_length = 0;
+i, j;
 for (i = 0; i < ac; i++)
 {
 j = 0;
@@ -18,7 +19,7 @@ total_length++;
 char *concatenated = (char *)malloc((total_length + 1) * sizeof(char));
 if (concatenated == NULL)
 return (NULL);
-int pos = 0;
+pos = 0;
 for (i = 0; i < ac; i++)
 {
 j = 0;
