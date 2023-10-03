@@ -5,6 +5,8 @@
  *
  * Return: 1 if the character is a space, tab, or newline, 0 otherwise.
  */
+char *word;
+int i, num_words, word_index;
 int is_space(char c)
 {
     return (c == ' ' || c == '\t' || c == '\n');
