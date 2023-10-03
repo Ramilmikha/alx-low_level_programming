@@ -1,35 +1,24 @@
+#include "main.h"
 #include <stdlib.h>
-char *argstostr(int ac, char **av)
+int **alloc_grid(int width, int height)
 {
-if (ac == 0 || av == NULL)
+if (width <= 0 || height <= 0)
 return (NULL);
-int total_length = 0;
-for (int i = 0; i < ac; i++)
-{
-int j = 0;
-while (av[i][j] != '\0')
-{
-total_length++;
-j++;
-}
-total_length++;
-}
-char *concatenated = (char *)malloc((total_length + 1) * sizeof(char));
-if (concatenated == NULL)
+int **grid = (int **)malloc(height * sizeof(int *));
+if (grid == NULL)
 return (NULL);
-int pos = 0;
-for (int i = 0; i < ac; i++)
+for (int i = 0; i < height; i++)
 {
-int j = 0;
-while (av[i][j] != '\0')
+grid[i] = (int *)malloc(width * sizeof(int));
+if (grid[i] == NULL)
 {
-concatenated[pos] = av[i][j];
-pos++;
-j++;
+for (int j = 0; j < i; j++)
+free(grid[j]);
+free(grid);
+return (NULL);
 }
-concatenated[pos] = '\n';
-pos++;
+for (int j = 0; j < width; j++)
+grid[i][j] = 0;
 }
-concatenated[pos] = '\0';
-return (concatenated);
+return (grid);
 }
