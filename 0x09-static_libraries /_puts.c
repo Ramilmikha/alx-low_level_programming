@@ -1,7 +1,7 @@
 /* _puts.c */
 
 #include <unistd.h>
-
+#include "main.h"
 void _puts(char *s)
 {
     while (*s)
