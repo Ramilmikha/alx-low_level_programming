@@ -1,5 +1,5 @@
 /* _strlen.c */
-
+#include "main.h"
 int _strlen(char *s)
 {
     int count = 0;
