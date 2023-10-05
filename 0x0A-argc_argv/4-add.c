@@ -24,7 +24,7 @@ return (1);
 */
 int main(int argc, char *argv[])
 {
-int num, i, sum;
+int num,i,sum;
 sum = 0;
 i;
 for (i = 1; i < argc; i++)
