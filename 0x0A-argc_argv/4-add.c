@@ -6,6 +6,7 @@
 */
 int is_digit(char *str)
 {
+int num, i, sum;
 if (!str || *str == '\0')
 return (0);
 while (*str)
@@ -24,9 +25,8 @@ return (1);
 */
 int main(int argc, char *argv[])
 {
-int num, i, sum;
 sum = 0;
-int i;
+i;
 for (i = 1; i < argc; i++)
 {
 if (is_digit(argv[i]))
