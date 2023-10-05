@@ -24,15 +24,14 @@ return (1);
 */
 int main(int argc, char *argv[])
 {
-int num,i,sum;
-sum = 0;
+int sum = 0;
 i;
 for (i = 1; i < argc; i++)
 {
 if (is_digit(argv[i]))
 {
-num = atoi(argv[i]);
-sum += num;
+int num = atoi(argv[i]);
+int sum += num;
 }
 else
 {
