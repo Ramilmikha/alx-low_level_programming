@@ -6,7 +6,7 @@
 * Return: Always 0
 */
 int argc;
-char argv;
+char *argv[];
 int main(argc, *argv[])
 {
 printf("%d\n", argc - 1);
