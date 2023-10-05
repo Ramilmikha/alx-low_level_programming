@@ -3,7 +3,7 @@ Task 0: Print Program Name
 File Name: 0-main.c
 Task 1: Print Number of Arguments
 
-File Name: 1-main.c
+File Name: 1-args.c
 Task 2: Print All Arguments
 
 File Name: 2-main.c
