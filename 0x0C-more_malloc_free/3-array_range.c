@@ -1,45 +1,45 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * array_range - Creates an array of integers.
- * @min: Minimum value.
- * @max: Maximum value.
- * Return: A pointer to the newly created array.
+ * _realloc - Reallocates a memory block using malloc and free.
+ * @ptr: Pointer to the previously allocated memory.
+ * @old_size: Size of the old memory block.
+ * @new_size: Size of the new memory block.
+ * Return: A pointer to the newly allocated memory.
  */
-int *array_range(int min, int max)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-    int *arr;
-    int size, i;
+    void *new_ptr;
 
-    if (min > max)
+    if (new_size == old_size)
+        return (ptr);
+
+    if (ptr == NULL)
+    {
+        new_ptr = malloc(new_size);
+        if (new_ptr == NULL)
+            return (NULL);
+        return (new_ptr);
+    }
+
+    if (new_size == 0)
+    {
+        free(ptr);
+        return (NULL);
+    }
+
+    new_ptr = malloc(new_size);
+
+    if (new_ptr == NULL)
         return (NULL);
 
-    size = max - min + 1;
-    arr = malloc(size * sizeof(int));
+    if (new_size < old_size)
+        old_size = new_size;
 
-    if (arr == NULL)
-        return (NULL);
+    for (unsigned int i = 0; i < old_size; i++)
+        ((char *)new_ptr)[i] = ((char *)ptr)[i];
 
-    for (i = 0; i < size; i++)
-        arr[i] = min++;
+    free(ptr);
 
-    return (arr);
-}
-
-int main(void)
-{
-    int *a;
-    int i;
-
-    a = array_range(0, 10);
-    if (a == NULL)
-        return (1);
-
-    for (i = 0; i <= 10; i++)
-        printf("%d\n", a[i]);
-
-    free(a);
-
-    return (0);
+    return (new_ptr);
 }
