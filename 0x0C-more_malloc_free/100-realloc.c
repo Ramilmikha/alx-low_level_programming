@@ -1,20 +1,26 @@
-#include <stdlib.h>
+/*
+* File: 100-realloc.c
+* Author: Peter Njoroge
+*/
+
 #include "main.h"
+#include <stdlib.h>
+
 /**
- * _realloc - Reallocates a memory block using malloc and free.
- * @ptr: Pointer to the previously allocated memory.
- * @old_size: Size of the old memory block.
- * @new_size: Size of the new memory block.
- * Return: A pointer to the newly allocated memory.
- */
+*  _realloc - creates an array of integers.
+*  @ptr: ptr arg
+*  @old_size: int arg
+*  @new_size: int arg
+*  Return: Nothing
+*/
+
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-    void *new_ptr;
-    char *p;
+	char *p;
 	unsigned int i, n = new_size;
 	char *oldp = ptr;
-    
-    if (ptr == NULL)
+
+	if (ptr == NULL)
 	{
 		p = malloc(new_size);
 		return (p);
