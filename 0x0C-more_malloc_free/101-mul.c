@@ -22,8 +22,8 @@ return (1);
 */
 int main(int argc, char *argv[])
 {
-  unsigned long num1;
-  unsigned long num2;
+unsigned long num1;
+unsigned long num2;
 if (argc != 3 || !is_digit(argv[1]) || !is_digit(argv[2]))
 {
 printf("Error\n");
