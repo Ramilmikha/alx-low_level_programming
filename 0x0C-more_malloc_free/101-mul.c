@@ -22,13 +22,15 @@ return (1);
 */
 int main(int argc, char *argv[])
 {
+  unsigned long num1;
+  unsigned long num2;
 if (argc != 3 || !is_digit(argv[1]) || !is_digit(argv[2]))
 {
 printf("Error\n");
 return (98);
 }
-unsigned long num1 = strtoul(argv[1], NULL, 10);
-unsigned long num2 = strtoul(argv[2], NULL, 10);
+num1 = strtoul(argv[1], NULL, 10);
+num2 = strtoul(argv[2], NULL, 10);
 printf("%lu\n", num1 * num2);
 return (0);
 }
