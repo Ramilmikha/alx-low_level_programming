@@ -17,12 +17,7 @@ action(array[i]);
 }
 }
 }
-/**
-* print_elem - Prints an integer
-* @elem: The integer to print
-*/
-void print_elem(int elem)
-{
+
 printf("%d\n", elem);
 }
 /**
