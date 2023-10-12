@@ -17,14 +17,3 @@ action(array[i]);
 }
 }
 }
-
-printf("%d\n", elem);
-}
-/**
-* print_elem_hex - Prints an integer in hexadecimal
-* @elem: The integer to print
-*/
-void print_elem_hex(int elem)
-{
-printf("0x%x\n", elem);
-}
