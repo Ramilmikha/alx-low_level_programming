@@ -3,6 +3,7 @@
 #include <stdio.h>
 /**
 * print_all - Prints anything based on a format.
+*
 * @format: A string that specifies the format of the arguments.
 */
 void print_all(const char * const format, ...)
